@@ -1,0 +1,4 @@
+otree==5.9.7
+psycopg2>=2.8.4
+sentry-sdk>=0.7.9
+PyGithub==1.57

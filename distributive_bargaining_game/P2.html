@@ -1,0 +1,28 @@
+{{ block title }}
+Your role and decision (Round {{player.round_number}})
+{{ endblock }}
+
+{{ block content }}
+
+{{ include C.INSTRUCTIONS_FILE }}
+
+<p>
+    You are the <b>responder</b>.
+</p>
+
+
+<p>
+    You received an offer of <b>{{group.amount_offered.__int__()}}</b> points.
+</p>
+
+{{ formfields }}
+
+{{ next_button }}
+
+<script>
+    var originalOffer = '{{group.amount_offered.__int__()}}'
+</script>
+<script src="{{ static 'negotiation_game/pages.js' }}"></script>
+
+
+{{ endblock }}
